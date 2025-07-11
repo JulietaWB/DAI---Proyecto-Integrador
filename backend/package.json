@@ -9,8 +9,12 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
     "expo": "~53.0.17",
     "expo-status-bar": "~2.2.3",
+    "express": "^5.1.0",
+    "pg": "^8.16.3",
     "react": "19.0.0",
     "react-native": "0.79.5"
   },
