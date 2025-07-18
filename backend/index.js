@@ -9,13 +9,15 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-// Importar routers
-const userRouter = require('./routes/userRouter');   // Asegurate que la ruta sea correcta
-const eventRouter = require('./routes/eventRoute');  // Acá estaba el error
+// Importar router
+const userRouter = require('./routes/userRouter');
+const eventRouter = require('./routes/eventRouter');
+const eventLocationRouter = require('./routes/eventLocationRouter');
 
 // Usar routers
 app.use('/api/user', userRouter);
 app.use('/api/event', eventRouter);
+app.use('/api/event-location', eventLocationRouter);
 
 // Iniciar servidor
 app.listen(PORT, () => {
